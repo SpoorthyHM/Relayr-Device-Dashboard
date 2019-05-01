@@ -2,4 +2,4 @@
 
 exports[`DeviceDetails should render correctly with empty props 1`] = `ShallowWrapper {}`;
 
-exports[`DeviceDetails should render correctly with no props 1`] = `ShallowWrapper {}`;
+exports[`DeviceDetails should render correctly with props 1`] = `ShallowWrapper {}`;

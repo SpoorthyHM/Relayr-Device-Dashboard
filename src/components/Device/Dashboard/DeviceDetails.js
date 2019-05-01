@@ -26,7 +26,7 @@ const deviceDetails  = (props) => {
                 <th>STATUS</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody className="DeviceBody">
                {devices}
             </tbody>
         </table>

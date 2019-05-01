@@ -1,6 +1,7 @@
 import React from 'react';
 import DeviceDetails from './DeviceDetails';
-import { shallow } from 'enzyme';
+import DeviceDetail from './DeviceDetail';
+import { shallow, mount } from 'enzyme';
 
 describe('DeviceDetails', () => {
     let data = {
@@ -22,15 +23,14 @@ describe('DeviceDetails', () => {
     }
 
     let noData = {"data" : []};
-    it('should render correctly with no props', () => {
+    it('should render correctly with props', () => {
         const component = shallow(<DeviceDetails {...data}/>);
-        component.setProps(data);
         expect(component).toMatchSnapshot();
       });
 
     it('should render correctly with empty props', () => {
         const component = shallow(<DeviceDetails {...noData}/>);
-        component.setProps(noData);
         expect(component).toMatchSnapshot();
     });
+
 });
